@@ -1,0 +1,29 @@
+### DOMAIN
+@api = http://localhost:4000
+
+### LIST VIDEO
+GET {{api}}/videos
+
+### CREATE VIDEO
+POST {{api}}/videos
+Content-Type: application/json
+
+{
+	"url": "Test 04",
+	"title": "Test 04",
+	"description": "Test 01"
+}
+
+### GET VIDEO
+GET {{api}}/videos/60a3195685b8b413c0a40250
+
+### DELETE VIDEO
+DELETE {{api}}/videos/609d4d883ad75bf4585cebe4
+
+### UPDATE VIDEO
+PUT {{api}}/videos/609d4d883ad75bf4585cebe4
+Content-Type: application/json
+
+{
+	"title": "Test 01 - Updated"
+}
